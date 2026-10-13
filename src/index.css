@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Calibri Cuerpo';
+  src: local('Calibri'), local('Calibri (Cuerpo)'), local('Carlito');
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-serif: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-calibri: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Canvas LMS Corporate Color Palette */
+  --color-canvas-bg: #F5F7F8;
+  --color-canvas-card: #FFFFFF;
+  --color-canvas-border: #C7CDD1;
+  --color-canvas-border-light: #E0E0E0;
+  --color-canvas-text: #2D3B45;
+  --color-canvas-text-muted: #556575;
+  --color-canvas-text-light: #6C757D;
+  
+  /* Canvas Institutional Blues */
+  --color-canvas-primary: #0374B5;
+  --color-canvas-primary-hover: #025a8c;
+  --color-canvas-accent: #008EE2;
+  --color-canvas-accent-hover: #007bc4;
+  --color-canvas-nav: #1E2B37;
+  --color-canvas-nav-active: #2D3B45;
+  --color-canvas-nav-hover: #263645;
+
+  /* Canvas Status Alert Colors */
+  --color-canvas-success: #00AC18;
+  --color-canvas-warning: #FC5E13;
+  --color-canvas-warning-alt: #E09F1F;
+  --color-canvas-danger: #EE0606;
+}
+
+/* Global Reset & Typography: Calibri Cuerpo para toda la aplicación */
+*, *::before, *::after {
+  font-family: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+html, body {
+  font-family: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #F5F7F8;
+  color: #2D3B45;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea {
+  font-family: "Calibri", "Calibri Cuerpo", "Carlito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+/* Canvas LMS Flat Button Classes */
+.btn-canvas-primary {
+  background-color: #0374B5;
+  color: #FFFFFF;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: background-color 0.15s ease-in-out;
+  border: 1px solid transparent;
+}
+.btn-canvas-primary:hover {
+  background-color: #025a8c;
+}
+
+.btn-canvas-secondary {
+  background-color: #FFFFFF;
+  color: #2D3B45;
+  border: 1px solid #C7CDD1;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 8px 16px;
+  transition: all 0.15s ease-in-out;
+}
+.btn-canvas-secondary:hover {
+  background-color: #F5F7F8;
+  border-color: #999DA0;
+}
+
+/* Canvas LMS Card Base */
+.canvas-card {
+  background-color: #FFFFFF;
+  border: 1px solid #C7CDD1;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+/* Canvas LMS Subtle Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F7F8;
+  border-left: 1px solid #E0E0E0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7CDD1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999DA0;
+}
+
+/* Legacy industrial classes mapped gracefully to Canvas styles to guarantee backward compatibility */
+.bg-hazard-stripes,
+.bg-hazard-stripes-subtle {
+  background: #0374B5;
+}
+
+.bg-technical-grid {
+  background-color: #F5F7F8;
+}
+
+.border-industrial,
+.border-industrial-subtle,
+.industrial-plate {
+  border: 1px solid #C7CDD1 !important;
+  box-shadow: none !important;
+  background-color: #FFFFFF;
+}

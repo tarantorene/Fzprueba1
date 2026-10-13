@@ -1,0 +1,6 @@
+{
+  "name": "Aula Virtual Fundametz",
+  "description": "Plataforma de capacitación con gestión de cursos, materiales didácticos, diseño de evaluaciones, seguimiento de progreso y métricas de eficacia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
